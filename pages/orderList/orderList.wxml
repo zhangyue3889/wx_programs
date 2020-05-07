@@ -1,0 +1,26 @@
+
+<block wx:if="{{onLoad}}">
+  <view class='nav'>
+    <v-nav levelList="{{navlist}}" bind:leveEvent="onleve" currcent="{{currcent}}"></v-nav>
+  </view>
+  <view class="list-box">
+    <view class='list' wx:for="{{list}}" wx:key="" wx:if="{{list.length}}">
+      <v-orderList orderList="{{item}}" bind:choosebtnOrder="choosebtnOrder" bind:Onevaluate="Onevaluate"></v-orderList>
+    </view>
+  </view>
+  <view class="weui-loadmore weui-loadmore_line" hidden='{{hasmoreData}}'>
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无更多数据</view>
+  </view>
+  <view class="weui-loadmore" hidden='{{hiddenloading}}'>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+  <view class='orderKong' wx:if="{{!list.length}}">
+    <image src='/images/icon/ys_ddlb_kd.png'></image>
+    <view class='tips'>抱歉，暂无订单列表</view>
+  </view>
+</block>
+<block wx:if="{{!onLoad}}">
+  <view class="weui-loadmore">
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+</block>

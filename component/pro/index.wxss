@@ -1,0 +1,52 @@
+/* component/pro/index.wxss */
+.pro-box{
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;  background: #fff;
+     justify-content: space-between; padding: 0 0%;
+     border-bottom: 1px solid #eee
+}
+.pro-img{
+    width: 202rpx;
+    height: 202rpx;
+    display: block;
+    overflow: auto;
+    border-radius: 6rpx;
+}
+.pro-content {
+    width: 340rpx;
+    height: 202rpx;
+    margin-left: 10rpx;
+    display: flex; 
+    flex-direction: column; 
+   justify-content:space-around
+  }
+  .pro-name{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size:26rpx;
+    font-family:PingFang-SC-Bold;
+    font-weight:bold;
+    color:rgba(70, 70, 70, 1);
+    
+  }
+  .pro-price{
+    line-height:40rpx;
+    font-size:22rpx;
+    font-family:PingFang-SC-Bold;
+    font-weight:bold;
+    color:rgba(85, 85, 85, 1);
+    
+  }
+  .pro-btn{
+    background: #08BB06; width:140rpx;
+    height:58rpx;
+    font-size:24rpx;
+  font-family:PingFang-SC-Bold;
+  font-weight:bold;
+  color:rgba(255,255,255,1); text-align: center; line-height: 58rpx;
+  border-radius: 12rpx; margin-right: 10rpx
+    
+  }

@@ -1,0 +1,84 @@
+/* pages/feedService/feedService.wxss */
+
+
+
+.suggest-item {
+  margin: 7rpx 0;
+  background: #fff;
+  padding: 0 15rpx;
+}
+
+.suggest-item2 {
+  margin-top: 13rpx;
+  padding-bottom: 20rpx;
+  margin-bottom: 60rpx;
+}
+
+.suggest-item input {
+  line-height: 110rpx;
+  height: 110rpx;
+  font-size: 28rpx;
+  font-family: PingFang-SC-Regular;
+  font-weight: 400;
+  color: rgba(165, 165, 165, 1);
+}
+
+.suggest-item2 text {
+  font-size: 28rpx;
+  font-family: PingFang-SC-Regular;
+  font-weight: 400;
+  color: rgba(86, 86, 86, 1);
+  margin-top: 27rpx;
+  display: inline-block;
+}
+
+.photo_img {
+  width: 160rpx;
+  height: 160rpx;
+  margin: 0 17rpx;
+}
+
+.add_message {
+  margin: 60rpx 25rpx 60rpx 55rpx;
+}
+
+.weui-uploader__img {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 15rpx;
+  border: 1px solid #f1efef;
+}
+
+.weui-uploader__bd {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.weui-uploader__bd view {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.aadd_imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.weui-uploader__file {
+}
+
+
+.iamge_cancel {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  position: relative;
+  top: -13rpx;
+  right: 31rpx;
+  z-index: 800;
+}
+

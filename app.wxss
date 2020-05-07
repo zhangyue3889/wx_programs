@@ -1,0 +1,113 @@
+/**app.wxss**/
+.scrollContainer {
+  width: 100%;
+  white-space: nowrap; background: #fff
+
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+.one-txt-cut {
+  /* 这三句话缺一不可 */
+  overflow: hidden;
+  /* 文本强制不换行 */
+  white-space: nowrap;
+  /* 以省略号的形式显示多余的文本 */
+  text-overflow:ellipsis;  width: 99%;
+}
+
+/* 多行溢出 */
+
+.ellipsis-m {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.weui-loadmore{font-size: 20rpx;
+   text-align: center; width: 100%; color: rgba(112,112,112,1);
+  line-height: 60rpx
+  }
+
+.navigator-hover{ background:none;}
+page{
+     background: #fff
+}
+.btn{
+  background: #08BB06; width:695rpx;
+  height:88rpx;
+  font-size:30rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:rgba(255,255,255,1); margin-top:79rpx; text-align: center; line-height: 88rpx;
+border-radius: 12rpx
+}
+/*授权*/
+.impower{
+  width: 568rpx;
+  height: 747rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  position: fixed; top: 20%; left: 91rpx; z-index: 1999;
+}
+.impower-img{
+
+  width: 568rpx;
+  height: 747rpx;
+
+}
+.com_but{
+  width:408rpx;
+height:60rpx;
+background:rgba(19,178,27,1);
+box-shadow:0px 3px 3px 0px rgba(8,187,6,0.27);
+border-radius:30rpx;
+font-size:26rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(255,255,255,1); text-align: center; line-height: 60rpx;
+bottom:58rpx;
+left: 80rpx; position: absolute
+}
+ .label-2{
+  margin-bottom: 15rpx; margin-right: 30rpx
+}
+ .label-2__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+.label-2__icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10rpx;
+  width: 36rpx;
+  height: 36rpx;
+  background: #eee;
+  border-radius: 50px;
+}
+
+.label-2__icon-checked {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 24rpx;
+  height: 24rpx;
+  background: #1aad19;
+  border-radius: 50%;
+}
+
+.label-4_text{
+  text-align: center;
+  margin-top: 15rpx;
+}

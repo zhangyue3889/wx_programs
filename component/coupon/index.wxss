@@ -1,0 +1,48 @@
+/* component/coupon/index.wxss */
+.cash-row { margin: 10rpx 0; position: relative;}
+
+.xjq_bg { width: 710rpx; height:160rpx;}
+
+.cash-content { position: absolute;width: 710rpx; height: 160rpx; top:0;
+display: flex; flex-direction: row;  align-items: center; left: 20rpx;
+}
+
+.left-t {
+ width: 151rpx;padding-left: 63rpx;
+
+}
+.t11 {
+	font-size: 22rpx;
+	font-family: PingFang-SC-Medium;
+	font-weight: 500;
+	color: rgba(97, 97, 97, 1);
+}
+
+.t14{font-size:28rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:rgba(2,187,171,1);}
+.t15{font-size:54rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:rgba(2,187,171,1);}
+.t16{font-size:28rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:rgba(53,53,53,1);}
+.right-t {
+	width: 380rpx;padding-left: 79rpx;
+	display: flex; flex-direction: column;
+	justify-content:flex-start; line-height: 50rpx;
+
+}
+.coupon-btn{
+	width:710rpx;
+height:84rpx; line-height: 84rpx;
+background:rgba(2,187,171,1);
+border-radius:6px; margin: 20rpx auto;
+font-size:30rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(255,255,255,1);
+}

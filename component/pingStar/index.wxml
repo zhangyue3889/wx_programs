@@ -1,0 +1,6 @@
+<!--component/pingStar/index.wxml-->
+<!-- <text>component/pingStar/index.wxml</text> -->
+<!--评论星级打分-->
+<block wx:for="{{stars}}">
+  <image class="star-image" src="{{key > item ?(key-item == 0.5?halfSrc:selectedSrc) : normalSrc}}" bindtap="selectRight" data-key="{{item+1}}"></image>
+</block>

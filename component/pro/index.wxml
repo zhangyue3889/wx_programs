@@ -1,0 +1,26 @@
+<!--产品样式-->
+<view class="pro-box">
+    <image  src="{{defaultUrl+productList.preview_img}}"
+    class="pro-img" lazy-load='true'
+    />
+    <view class="pro-content">
+        <text class="pro-name one-txt-cut ">{{productList.goods_name}}</text>
+         <text class="pro-price one-txt-cut "> ￥{{productList.goods_price}} </text>
+    </view>
+    <block wx:if="{{productList.is_groupbuy==='1'}}">
+    <navigator url="../../pages/proview/proview?id={{productList.id}}">
+        <view class="pro-btn" >
+            立即购买
+        </view>
+    </navigator>
+</block> 
+ <block wx:if="{{productList.is_groupbuy==='0'}}">
+    <navigator url="../../pages/groupview/groupview?id={{productList.id}}">
+        <view class="pro-btn" >
+            开始团购
+        </view>
+    </navigator>
+</block>       
+    
+   
+</view>

@@ -1,0 +1,11 @@
+<!--component/customer/index.wxml-->
+<!--客服热线-->
+<view  class="row" bind:tap="calltell">
+  <block wx:if="{{telArray.telImg}}">
+  <image src="{{telArray.telImg}}" />
+  </block>
+  <block wx:if="{{telArray.telText}}">
+    <text>{{telArray.telText}}</text>
+  </block>
+  
+  </view>

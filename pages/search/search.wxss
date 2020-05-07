@@ -1,0 +1,8 @@
+/* pages/search/search.wxss */
+@import '../../component/wxSearch/wxSearch'
+
+.title{
+  width: 100%; background: #FF4669;
+  height: 45rpx;border-bottom: 1px solid #FF4669;padding-bottom: 10rpx;
+  line-height: 55rpx; margin: 10rpx 0
+}

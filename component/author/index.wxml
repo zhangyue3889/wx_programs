@@ -1,0 +1,11 @@
+<!--授权登录-->
+
+
+<view class="login">
+<image src="../../images/yxf_WXSQ.png" class="topimg" />
+<view  class="t1">获得你的公开信息(昵称、头像等)</view>
+<view class="t2">现在开始你的生活之旅吧!</view>
+ <button class="com_but" open-type="getUserInfo" bindgetuserinfo="getUserInfo">申请进入授权</button>
+</view>
+
+

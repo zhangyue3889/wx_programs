@@ -1,0 +1,7 @@
+/* component/pingStar/index.wxss */
+
+.star-image {
+  margin: 0 10rpx;
+  width: 52rpx;
+  height: 52rpx;
+}

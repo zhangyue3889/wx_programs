@@ -1,0 +1,38 @@
+.login{ 
+ display: flex;
+ flex-direction: column;
+ align-items: center; justify-content: center
+}
+page{
+    padding: 0
+}
+.topimg{
+    width:750rpx; height: 520rpx;
+}
+.t1{
+    width:570rpx;
+height:113rpx;
+background:rgba(255,255,255,1);
+    font-size:26rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgba(116,116,116,1);
+text-align: center; line-height: 113rpx
+}
+.t2{
+    font-size:24rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:#FF6484; padding-top: 41rpx
+}
+.com_but{
+    width:570rpx;
+height:75rpx;
+background:#FF6484;
+border-radius:6px;
+font-size:26rpx;
+font-family:PingFang SC;
+font-weight:500;
+color:rgba(255,255,255,1);
+text-align: center; line-height: 75rpx; margin-top: 81rpx
+}

@@ -1,0 +1,63 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.title{
+  width: 750rpx; background: #FF4669;
+  height: 45rpx;border-bottom: 1px solid #FF4669;padding-bottom: 10rpx;
+  line-height: 55rpx; margin: 10rpx 0; 
+}
+.conversion {
+  width: 100%;
+  height: 315rpx;
+}
+
+.conversion .conversion_tit {
+  height: 140rpx;
+  line-height: 140rpx;
+  width: 100%;
+  margin-bottom: 20rpx;
+  text-align: center;
+  font-size: 26rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(59, 59, 59, 1);
+}
+
+.conversion .content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.conversion .iptbox{
+  width: 80rpx;
+  height: 80rpx;
+  border:1rpx solid #ddd;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.conversion .ipt{
+  width: 0;
+  height: 0;
+}

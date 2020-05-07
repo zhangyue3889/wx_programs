@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "一小分",
+  "usingComponents": {
+    "v-nav": "/component/nav/index",
+    "v-orderList": "/component/orderList/index"
+  }
+}

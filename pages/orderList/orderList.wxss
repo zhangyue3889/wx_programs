@@ -1,0 +1,33 @@
+/* pages/orderList/orderList.wxss */
+
+page {
+  background: #f1f1f1;
+}
+.nav{position: fixed; top:0}
+.list-box{
+  padding-top: 100rpx
+}
+.orderKong {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+v-nav{ display:flex; top:0; width: 750rpx;}
+.orderKong image {
+  width: 190rpx;
+  height: 137rpx;
+}
+
+.orderKong  .tips {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  font-family: PingFang-SC-Regular;
+  font-weight: 400;
+  color: rgba(41, 41, 41, 1);
+  text-align: center;
+}

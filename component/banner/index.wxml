@@ -1,0 +1,16 @@
+<!-- 轮播banner图 -->
+<!-- <text>component/banner/index.wxml</text> -->
+<view class='banner'>
+  <block wx:if="{{bannerImgList.length>1}}">
+  <swiper indicator-dots="true" autoplay="true">
+    <block wx:for="{{bannerImgList}}" wx:key="">
+      <swiper-item data-url="{{item.url}}" bind:tap="goPage">
+        <image src="{{defaultUrl+item.path}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  </block>
+  <block wx:else>
+    <image src="{{defaultUrl+bannerImgList[0].path}}"  bind:tap="goPage"/>
+  </block>
+</view>

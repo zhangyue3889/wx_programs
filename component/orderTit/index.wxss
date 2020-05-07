@@ -1,0 +1,50 @@
+/* component/order-tit/index.wxss */
+
+.order_title {
+  width: 100%;
+  height: 152rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top:30rpx;
+  padding-bottom: 30rpx;
+  border-top: 1rpx solid #f6f6f6;
+  border-bottom: 1rpx solid #f6f6f6;
+}
+
+.order_title .order_img {
+  width: 68rpx;
+  height: 68rpx;
+  margin-right: 24rpx;
+}
+
+.order_title .order_img  image {
+  width: 100%;
+  height: 100%;
+}
+
+.order_title .text {
+  width: 640rpx;
+  height: 68rpx;
+  text-overflow: ellipsis;
+}
+
+.order_title .text .order_tit {
+  font-size: 30rpx;
+  line-height: 40rpx;
+  font-family: PingFang-SC-Bold;
+  font-weight: bold;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  color: rgba(59, 59, 59, 1);
+}
+
+.order_title .text .order_decs {
+  line-height: 40rpx;
+  font-size: 24rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(108, 108, 108, 1);
+}

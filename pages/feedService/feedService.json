@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "商品评价",
+  "usingComponents": {
+    "v-button": "/component/image-button/index",
+    "v-pingStar":"/component/pingStar/index",
+    "v-uploadImg": "/component/uploadImg/index"
+  }
+}

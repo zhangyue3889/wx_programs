@@ -1,0 +1,14 @@
+<!--component/order-tit/index.wxml-->
+<!-- <text>component/order-tit/index.wxml</text> -->
+<!-- 订单头 -->
+
+<view class='order_title'>
+  <view class='order_img'>
+    <image src='{{defaultUrl+orderIit.goodImg}}'></image>
+  </view>
+  <view class='text'>
+    <view class='order_tit'>{{orderIit.goodName}}</view>
+    <view class='order_decs' wx:if="{{orderIit.endTime==null}}">过期时间:不限时使用</view>
+    <view class='order_decs' wx:if="{{orderIit.endTime!=null}}">过期时间:{{orderIit.endTime}}</view>
+  </view>
+</view>

@@ -1,0 +1,54 @@
+<!--component/orderList/index.wxml-->
+<!-- <text>component/orderList/index.wxml</text> -->
+<!--订单产品样式-->
+<view class='list_item'>
+  <view class='item_com'>
+    <view class='item_top'>
+      <view class='left'>
+        <image src='{{defaultUrl+orderList.good_img}}'></image>
+      </view>
+      <view class='cen'>
+        <view class='tit'>{{orderList.good_name}}</view>
+        <view class='time_1'>下单时间:{{orderList.create_time}}</view>
+        <view class='time_2' wx:if="{{orderList.end_time}}">过期时间:{{orderList.end_time}}</view>
+      </view>
+      <view class='right'>
+        <block wx:if="{{orderList.order_state===0}}">
+            <text class='state blue'>未使用</text>
+        </block>
+      <block wx:if="{{orderList.order_state===1}}">
+            <text class='state'>待评价</text>
+        </block>
+        <block wx:if="{{orderList.order_state===2}}">
+            <text class='state'>已过期</text>
+        </block>
+        <block wx:if="{{orderList.order_state===4}}">
+            <text class='state blue'>已使用</text>
+        </block>
+
+        <text class='num'>x1</text>
+      </view>
+    </view>
+    <view class='item_bottom'>
+    <!-- (0：未使用；1：已使用；2：已过期；3：未付款;4:已评价) -->
+
+      <view class='left'>共1件商品 实付:<text class='black'>￥{{orderList.total_price}}</text></view>
+        <block wx:if="{{orderList.order_state===0}}">
+         <view class='right btn-order' bind:tap="btnOrder" data-id="{{orderList.id}}" data-state="{{orderList.order_state}}">去使用</view>          
+        </block>
+        <block wx:if="{{orderList.order_state===1}}">
+         <view class='right blueBg btn-order' bind:tap="btnOrder" data-id="{{orderList.id}}" data-state="{{orderList.order_state}}">订单详情</view>
+             <view class='right  btn-order' bind:tap="Onevaluate" data-id="{{orderList.id}}"  data-state="{{orderList.order_state}}">去评价</view>
+        </block>
+        <block wx:if="{{orderList.order_state===2}}">
+          <view class='right blueBg btn-order ' bind:tap="btnOrder" data-id="{{orderList.id}}" data-state="{{orderList.order_state}}">订单详情</view>
+        
+        </block>
+        <block wx:if="{{orderList.order_state===4}}">
+          <view class='right blueBg btn-order' bind:tap="btnOrder" data-id="{{orderList.id}}" data-state="{{orderList.order_state}}">订单详情</view>
+         
+        </block>     
+      
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+/* component/collect/index.wxss */
+.xin {
+  width: 100rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.xin image {
+  width: 40rpx;
+  height: 40rpx;
+}

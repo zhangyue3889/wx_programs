@@ -1,0 +1,14 @@
+<!--优惠券-->
+	<view class="cash-row">
+		<image src="../../images/icon/ys_wdjf_xjq.png" class="xjq_bg"></image>
+		<view class="cash-content">
+			<view class="left-t row">
+			 <text class="t14">￥</text>
+			  <text class="t15">{{CouponDto.couponAmount}}</text>
+			</view>
+			<view class="right-t">
+				<text class="t16">{{CouponDto.couponName}}</text>
+				<text class="t11">限满{{CouponDto.fullReducAmount}}元可用</text>
+			</view>
+		</view>
+	</view>

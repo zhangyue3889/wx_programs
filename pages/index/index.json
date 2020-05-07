@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "v-getUserInfo": "/component/author/index",
+    "v-coupon": "/component/coupon/index",
+    "v-banner": "/component/banner/index",
+    "v-customer": "/component/customer/index",
+    "v-message": "/component/message/index",
+    "v-address": "/component/address/index",
+    "v-collect": "/component/collect/index"
+  }
+}

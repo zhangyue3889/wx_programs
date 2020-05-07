@@ -1,0 +1,10 @@
+<!-- pages/search/search.wxml -->
+<view>
+  <import src="/component/wxSearch/wxSearch"></import>
+  <template is="wxSearch" data="{{...tabData}}"></template>
+  <text class="title">轮播banner图</text>
+
+  <v-banner bannerImgList="{{bannerImgList}}"></v-banner>
+    <text class="title">地图导航</text>
+    <view bind:tap="onMap" style="margin-top:10rpx; width:200rpx; height:100rpx;border:1px solid #ccc; text-align:center; line-height:100rpx; margin:40rpx auto">点击导航</view>
+</view>

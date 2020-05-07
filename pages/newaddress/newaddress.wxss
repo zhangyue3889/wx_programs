@@ -1,0 +1,119 @@
+
+page{ background: #fff;}
+.container{ padding: 0;}
+.footer{width:750rpx; height: 112rpx; background: #FF4E00; display: flex; flex-direction: row;
+justify-content: center; align-items: center; position: fixed; bottom:0; color: #FFFFFF;}
+.footer image{width:29rpx; height: 29rpx; margin-left: 10rpx;}
+.footer text{font-size:32rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(255,255,255,1);
+}
+.empty-box{ display: flex; flex-direction: column; justify-content: center; align-items: center;font-size:26rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(148,148,148,1);
+line-height:36px; margin-top: 309rpx;}
+.empty-box image{ width: 143rpx; height: 157rpx; margin-bottom: 10rpx;}
+.address-list{ padding-bottom:112rpx}
+.list-item{ width: 750rpx; border-bottom: 19rpx solid #F3F3F3;}
+.list-col{ display: flex; flex-direction:column;  widows: 750rpx; position: relative;padding-top: 50rpx;}
+.colse{width:35rpx; height: 35rpx; position: absolute; top:22rpx; right: 54rpx;}
+.row-box1 .defalut-t{font-size:26rpx;
+font-family:PingFang-SC-Regular;
+font-weight:400;
+color:#B6B6B6;
+line-height:36rpx;}
+.current .defalut-t{
+color:#FF4E00;}
+
+.list-col .write-ico{ width: 35rpx; height: 35rpx;}
+.pitch{width:30rpx; height: 30rpx;margin-right: 20rpx;}
+.post-user{ width: 614rpx; display: flex; flex-direction: column; border-bottom: 1px solid #F3F3F3; padding: 0 80rpx 15rpx 56rpx;}
+.row-box{ display: flex; flex-direction: row; justify-content:space-between;  padding: 0 80rpx 15rpx 56rpx;width: 614rpx; margin-top: 20rpx;}
+.row-box1{ display: flex; flex-direction: row; justify-content:center; align-items: center;}
+.row-box1 .write{font-size:26rpx;
+font-family:PingFang-SC-Regular;
+font-weight:400;
+color:rgba(49,181,46,1);
+line-height:36rpx}
+.post-user .t1{
+	font-size:30rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:rgba(52,52,52,1);
+line-height:36rpx; margin-bottom: 28rpx; display: inline-block;}
+.post-user .t2{font-size:28rpx;font-family:PingFang-SC-Medium;
+
+color:#464646;
+line-height:36rpx;}
+.posting-container{
+	  top: 61rpx;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 56rpx; right:57rpx;
+  width: 637rpx;
+  z-index: 999;
+
+background:rgba(255,255,255,1);
+border-radius:12px 12px 0px 0px;	
+}
+.post-header{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items: center;
+	height: 107rpx;
+	width:637rpx;
+	border-bottom:1px solid #E3E3E3;
+	text-align: center;position: relative;
+}
+.colse{
+width:40rpx;
+height:40rpx;
+position:absolute;
+right:17rpx;
+top:29rpx;
+
+}
+.saveAddress{}
+.address-row{ display: flex; flex-direction: row; height: 107rpx; align-items: center; justify-content: center; width: 100%;border-bottom:1px solid #E3E3E3;}
+.weui-input{
+	font-size:28rpx;
+font-family:PingFang-SC-Regular;
+font-weight:400;
+color:rgba(135,135,135,1);
+line-height:36px;height: 107rpx; 
+}
+.weui-input:nth-child(1){border-right: 1px solid #E3E3E3; padding-left: 31rpx; width: 242rpx;}
+.weui-input:nth-child(2){ padding-left: 93rpx; width: 270rpx;}
+.picker-city{font-size:28rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:rgba(37,37,37,1);
+line-height:82rpx; margin-left: 31rpx; width: 500rpx; border: none; }
+.address-row2{ justify-content: space-between; position: relative;}
+.rightIcon{ width: 42rpx; height: 42rpx; margin-right: 38rpx; display: inline-block; position: absolute; top:32rpx; right: 10rpx;}
+
+.weui-input2{	font-size:28rpx;
+font-family:PingFang-SC-Regular;
+font-weight:400;
+color:rgba(135,135,135,1);
+line-height:36px;height: 107rpx;margin-left:0rpx; width: 563rpx; }
+.addressbtn-box{height:142rpx;
+background:rgba(245,245,245,1);
+border-radius:0px 0px 12rpx 12rpx;
+display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.submit{
+	font-size:32rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(255,255,255,1);
+line-height:94rpx;
+width: 580rpx; height: 94rpx;
+background: #FF4E00!important; border-radius: 62rpx; margin:24rpx auto; text-align: center;
+}
+
+

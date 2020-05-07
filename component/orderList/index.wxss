@@ -1,0 +1,139 @@
+/* component/orderList/index.wxss */
+
+.list_item {
+  margin-top: 20rpx;
+  width: 100%;
+  height: 334rpx;
+  background: #f1f1f1;
+}
+
+.list_item .item_com {
+  margin: 0 auto;
+  width: 708rpx;
+  height: 334rpx;
+}
+
+.list_item .item_com .item_top {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 20rpx;
+  border-bottom: 2rpx solid #cbcbcb;
+  padding-bottom: 20rpx;
+  padding-top: 30rpx;
+  height: 221rpx;
+  
+}
+
+.list_item .item_com .item_top .left {
+  width: 139rpx;
+  height: 139rpx;
+  margin-right: 20rpx;
+}
+
+.list_item .item_com .item_top .left image {
+  width: 100%;
+  height: 100%;
+}
+
+.list_item .item_com .item_top .cen {
+  width: 460rpx;
+  height: auto;
+}
+
+.list_item .item_com .item_top .cen .tit {
+  font-size: 26rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(42, 42, 42, 1);
+  line-height: 40rpx;
+}
+
+.list_item .item_com .item_top .cen .time_1 {
+  font-size: 24rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(112, 112, 112, 1);
+  line-height: 40rpx;
+}
+
+.list_item .item_com .item_top .cen .time_2 {
+  font-size: 24rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(242, 79, 79, 1);
+  line-height: 40rpx;
+}
+
+.list_item .item_com .item_top .right {
+  width: 100rpx;
+  height: 139rpx;
+  font-size: 26rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(135, 135, 135, 1);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.list_item .item_com .item_top .right view {
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+
+.blue {
+  color: #02bbab;
+}
+.btn-order{
+  border:1px solid #02bbab
+}
+.item_bottom {
+  width: 100%;
+  height: 110rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.item_bottom .left {
+  font-size: 26rpx;
+  font-family: PingFang-SC-Regular;
+  font-weight: 400;
+  color: rgba(56, 56, 56, 1);
+}
+
+.black {
+  color: #000;
+}
+
+.item_bottom .right {
+  width: 166rpx;
+  height: 58rpx;
+  border-radius: 29rpx;
+  font-size: 28rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  text-align: center;
+  line-height: 58rpx;
+}
+
+.blueBg {
+  background: rgba(2, 187, 171, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.redBg {
+  background: rgba(255, 255, 255, 1);
+  border: 2rpx solid rgba(228, 63, 63, 1);
+  color:rgba(233,69,69,1);
+}

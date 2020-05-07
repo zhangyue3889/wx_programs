@@ -1,0 +1,7 @@
+<!--区域选择-->
+<import src="../../models/area/area.wxml"/>
+<view class="address-row address-row2"bindtap="translate">
+	<view class="picker-city" >{{province}} {{city}} {{county}}</view>
+ <image src="../../images/icon/qcgw_jm_jt.png" class="rightIcon"></image>
+</view>
+<template is="areaData" data="{{...item}}"/>

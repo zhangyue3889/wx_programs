@@ -1,0 +1,11 @@
+/* component/address/index.wxss */
+@import '../../models/area/area'
+
+.picker-city{font-size:28rpx;
+  font-family:PingFang-SC-Bold;
+  font-weight:bold;
+  color:rgba(37,37,37,1);
+  line-height:82rpx; margin-left: 31rpx; width: 500rpx; border: none; }
+  .address-row2{ justify-content: space-between; position: relative;}
+  .rightIcon{ width: 42rpx; height: 42rpx; margin-right: 38rpx; display: inline-block; position: absolute; top:32rpx; right: 10rpx;}
+  

@@ -1,0 +1,11 @@
+<!--导航-->
+<view class='navList {{blockcss}}'>
+
+  <view
+   class='item {{currcent===index?"active":""}}'
+    data-index="{{index}}" wx:for="{{levelList}}" wx:key="" data-id="{{item.id}}"
+    bind:tap="Onleve"
+  >{{item.category_name}}  
+  </view>
+
+</view>

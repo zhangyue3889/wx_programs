@@ -1,0 +1,7 @@
+<!--pages/list/list.wxml-->
+<view class='conner'>
+  <block wx:for="{{list}}" wx:key="" wx:if="{{carGoods.length!==0}}">
+      <v-pro productList="{{item}}"></v-pro>
+  </block>
+   <text wx:if="{{carGoods.length==0}}" class="emptytext">{{emptyText}}</text> 
+</view>

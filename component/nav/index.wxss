@@ -1,0 +1,28 @@
+/* component/nav/index.wxss */
+
+.navList {
+  width:100% ;
+  height:100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  font-family: PingFang-SC-Heavy;
+  font-weight: 800;
+  color: #232323;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background: #fff;
+
+}
+.navList.blockcss{
+  display: block
+}
+
+.navList .item {
+  display: inline-block; margin: 0 20rpx
+
+}
+.navList .active{
+ color: #02BBAB;
+ border-bottom: 8rpx solid #02BBAB;
+}

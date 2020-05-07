@@ -1,0 +1,4 @@
+<!--收藏点赞-->
+   <view class='xin' catch:tap="bindcollect">
+            <image src='{{isSaveShop==1?"../../images/icon/ys_spxq_sc.png":"../../images/icon/ys_spxq_csw.png"}}'></image>
+   </view>

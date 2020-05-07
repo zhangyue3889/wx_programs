@@ -1,0 +1,20 @@
+   <!--上传图片-->
+    <view class="suggest-item suggest-item2">
+      <text>上传图片(最多3张)</text>
+      <view class='add_message'>
+        <view class='inp_text1' wx:if="{{showModalStatus}}">{{msg}}</view>
+        <view class=' aadd_imgs'>
+          <view class="weui-uploader__bd">
+            <view class="weui-uploader__files">
+              <block wx:for="{{pics}}" wx:for-item="image">
+                <view class="weui-uploader__file" data-id="{{index}}">
+                  <image mode='widthFix' class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+                  <image class="iamge_cancel" src="/images/icon/colse.png" mode="aspectFill" data-id="{{index}}" bindtap="deleteImage" />
+                </view>
+              </block>
+            </view>
+          </view>
+          <image src='../../images/icon/order_pic_shangchuantupian.png' class='photo_img' bindtap="upload" wx:if="{{pics.length<3}}"></image>
+        </view>
+      </view>
+    </view>

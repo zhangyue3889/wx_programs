@@ -1,0 +1,18 @@
+<!-- mall/feedback/feedback.wxml -->
+
+<view class='pingStar'>
+  <view class='tit'>推荐指数</view>
+  <view class='star'>
+    <v-pingStar bind:myeventstart="getmystart"></v-pingStar>
+  </view>
+</view>
+<view class="container">
+  <form bindsubmit="formSubmit" report-submit='true'>
+    <view class="suggest-input">
+      <textarea name="describe" bindinput="bindTextAreaNum" maxlength="150" placeholder-style="color:#A5A5A5;" auto-height placeholder="商品满足你的期待吗?说说你的想法和建议吧" />
+      <text>已输入{{TextAreaNum}}/150</text>
+    </view>
+    <v-uploadImg bind:eventpicpath="getPicpath"></v-uploadImg>
+    <button type="primary" form-type="submit" class="submit-img">确定提交</button>
+  </form>
+</view>

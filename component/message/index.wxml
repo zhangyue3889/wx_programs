@@ -1,0 +1,14 @@
+   <!--系统信息-->
+    <view  class="list row" wx:for="{{list}}" wx:key="">
+        <view class="iconBox">
+            <image src="../../images/icon/qcgw_xx_icon.png" class="new-icon" />
+        </view>
+
+        <view class="clome">
+            <view class="row">
+                <text class="t1">系统消息</text>
+                <text class="t2">{{item.crttime}}</text>
+            </view>
+            <text class="t3 one-txt-cut">{{item.content}}</text>
+        </view>
+    </view>

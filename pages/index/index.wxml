@@ -1,0 +1,53 @@
+<!-- index.wxml -->
+<view class="container" wx:if="{{pageload}}">
+    <v-getUserInfo wx:if="{{!hasUserInfo && canIUse}}" bind:getUserInfo='getUserInfo'></v-getUserInfo>
+    <block wx:else>
+        <text class="title">轮播banner图</text>
+        <v-banner bannerImgList="{{bannerImgList}}"></v-banner>
+        <text class="title">优惠券模块</text>
+        <block wx:for="{{couponlist}}" wx:key="">
+            <v-coupon CouponDto="{{item}}"></v-coupon>
+        </block>
+        <text class="title">客服电话</text>
+        <v-customer telArray="{{telArray}}"></v-customer>
+        <text class="title">信息公告模块</text>
+        <v-message list="{{messagelist}}"></v-message>
+        <text class="title">省市区选择器</text>
+        <v-address address = "{{address}}" bind:getAddres="getAddres"></v-address>
+<text class="title">微信自带省市区选择器</text>
+<!--两者区别在与前者可以自定义选择省市区，后者不行-->
+        <view class="section">
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class="picker">
+            当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+            </view>
+        </picker>
+        
+        </view>
+        <view class="title">收藏点赞</view>
+        <v-collect isSaveShop="{{isSaveShop}}" bind:eventcollect='Oncollect'></v-collect>
+        <navigator url='/pages/list/list'> <view class="title">进入产品列表分页</view></navigator>
+        <navigator url='/pages/orderList/orderList'> <view class="title">进入订单列表分页</view></navigator>
+      <view class="title">线上核销(扫码)</view>
+             <view class='myList_l' bind:tap="onscanCode">
+                <view solt="text">核销订单</view>
+            </view>
+      <view class="title">线上核销(销核码)</view>
+      <view class='conversion'>
+            <view class='conversion_tit'>请让店员输入店码完成兑换</view>
+    <view class='content'>
+        <block wx:for="{{Length}}" wx:key="item">
+            <block wx:if="{{Value.length>=index+1}}">
+                <input class='iptbox active' value="{{Value.length>=index+1?Value[index]:''}}" disabled password='{{ispassword}}' catchtap='Tap' bindinput="getGoodName"></input>
+            </block>
+            <block wx:else>
+                <input class='iptbox' value="{{Value.length>=index+1?Value[index]:''}}" disabled password='{{ispassword}}' catchtap='Tap'></input>
+            </block>
+        </block>
+    </view>
+   
+    <input name="password" password="{{true}}" class='ipt' maxlength="{{Length}}" focus="{{isFocus}}" bindinput="Focus"></input>
+      </view>
+    </block>
+   
+</view>

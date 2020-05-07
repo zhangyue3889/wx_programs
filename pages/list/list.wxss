@@ -1,0 +1,7 @@
+/* pages/list/list.wxss */
+.conner{
+  width:98%;
+ height: auto;
+ padding:0rpx  1%  20rpx;
+ box-sizing: border-box;  background: #fff; 
+}

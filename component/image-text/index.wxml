@@ -1,0 +1,10 @@
+<!--图片文字-->
+<button
+bindgetuserinfo="onGetUserInfo"
+ form-type='{{fromType}}'
+ open-type='{{openType}}'
+   plain='{{true}}'
+    class="container" aria-disabled="false">
+  <slot name="img"></slot>
+  <slot name="text"></slot>
+</button>

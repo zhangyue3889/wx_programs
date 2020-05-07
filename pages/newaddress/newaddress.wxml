@@ -1,0 +1,74 @@
+<!--pages/newaddress/newaddress.wxml-->
+<view class="container">
+<view class="address-list" wx:if="{{!empty}}">
+	<block wx:for="{{addressList}}" wx:key="id">
+			<view class="list-item">
+		<view class="list-col" data-id="{{item.id}}" >
+			<image src="../../images/icon/smgy_wd_gb.png" class="colse"  bind:tap="delAddress" data-id="{{item.id}}"></image>
+			<view class="post-user" bind:tap="onBack"data-id="{{item.id}}" data-index="{{index}}">
+					<text class="t1">{{item.rec_name}}  {{item.rec_phone}}</text>
+					<text class="t2">{{item.address_detail}}</text>			
+				</view>
+			<view class="row-box">
+				<view class="row-box1 {{item.is_default?'current':''}}" bind:tap="onDefalut" data-id="{{item.id}}"  >
+					<image src="{{item.is_default?'../../images/icon/smgy_wd_mr.png':'../../images/icon/smgy_wd_wmr.png'}}" class="pitch"></image>
+					<text class="defalut-t">已设为默认</text>
+				</view>
+				<view class="row-box1" 
+					 bind:tap="onEditor"
+					 data-id="{{item.id}}"
+					 data-name="{{item.rec_name}}"
+					 data-phone="{{item.rec_phone}}"
+					 data-province="{{item.rec_province}}"
+					 data-city="{{item.rec_city}}"
+					 data-county="{{item.rec_district}}"
+					 data-address="{{item.address_detail}}"
+					 >
+					<text class="write" >编辑</text>
+				</view>
+			</view>
+		</view>
+		
+		</view>
+	</block>
+
+		</view>
+		
+	
+</view>
+<view class="empty-box" wx:if="{{empty}}">
+	<text>亲，您还没有收货地址</text>
+</view>
+
+<view class='posting-container' wx:if="{{posting}}" >
+	<view class="post-header">
+				<text>选择地址</text>
+				<image src="../../images/icon/smgy_wd_gb.png" class="colse" bind:tap="onClose"></image>
+	</view>
+	<form bindsubmit="saveAddress" index-updataid = "{{updataid}}">
+		<view class="address-row">
+			<input class="weui-input" name="consignee" placeholder="请输入收货人姓名"  value="{{name}}"/>
+			<input class="weui-input" name="mobile" placeholder="请输入联系方式" value="{{phone}}" type="number"/>
+		</view>	
+<view class="address-row address-row2">
+	  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class="picker-city">
+            {{region[0]}}，{{region[1]}}，{{region[2]}}
+            </view>
+        </picker>
+ <image src="../../images/icon/smgy_wdl_jt.png" class="rightIcon"></image>
+</view>
+		<view class="address-row">
+			<input class="weui-input2" name="address" placeholder="详细地址(如街道、小区、乡镇、村)" value="{{valueaddress}}" />
+		</view>
+		<view class="addressbtn-box" bindsubmit="saveAddress">
+		 <button class="submit" type="primary" form-type="submit">保存地址</button>	
+		</view>
+	</form>
+	
+</view>
+<v-mask wx:if="{{posting}}"></v-mask>
+<view class="footer" bind:tap="onWrite">
+  <text>新增收获地址</text>
+  <image src="../../images/icon/smgy_wd_xz.png" ></image>
+</view>

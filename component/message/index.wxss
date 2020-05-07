@@ -1,0 +1,62 @@
+/* pages/message/message.wxss */
+page{
+  background: #FBFAFA
+}
+.row{ display: flex; 
+flex-direction: row;
+justify-content: space-between; align-items: center; width:100%
+}
+.new-icon{
+  width: 70rpx; height: 70rpx; margin-left: 17rpx;
+}
+.clome{ display: flex;
+flex-direction: column;
+align-items: flex-start; width:600rpx ; margin: 0 20rpx
+}
+.list{
+  width: 710rpx; height: 144rpx; margin: 10rpx auto;
+  background: #fff; box-shadow:0px 2px 6px 0px rgba(233,225,225,0.36);
+  border-radius:4px;
+}
+.t1{
+  font-size:24rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(119,119,119,1);
+
+}
+.t2{
+  font-size:22rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(119,119,119,1);
+
+}
+.t3{
+  font-size:26rpx;
+  font-family:PingFang-SC-Bold;
+  font-weight:bold;
+  color:rgba(53,53,53,1);
+  padding-top:23rpx
+}
+.t4{
+  font-size:26rpx;
+font-family:PingFang-SC-Regular;
+font-weight:400;
+color:rgba(53,53,53,1);
+}
+.nomessage{
+   margin-top: 20%; display: flex; flex-direction: column; align-items: center; justify-content: center;
+
+}
+.no-img{
+  width: 214rpx; height: 167rpx; margin-bottom: 37rpx
+}
+.iconBox{
+ position: relative;  width: 70rpx; height: 70rpx;
+}
+.circle{
+  width: 20rpx; height: 20rpx;
+  border-radius: 50%;
+  position: absolute; top:1rpx; right: 1rpx;  background: red
+}
